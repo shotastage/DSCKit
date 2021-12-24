@@ -11,6 +11,8 @@
 		257E52D8276F7DF900084D0F /* DSCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257E52CD276F7DF900084D0F /* DSCKit.framework */; };
 		257E52DD276F7DF900084D0F /* DSCKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257E52DC276F7DF900084D0F /* DSCKitTests.swift */; };
 		257E52DE276F7DF900084D0F /* DSCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 257E52D0276F7DF900084D0F /* DSCKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		257E52E9276F84B000084D0F /* DFCFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257E52E8276F84B000084D0F /* DFCFS.swift */; };
+		25FDFB3A2775BA2B0083F4E7 /* FSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FDFB392775BA2B0083F4E7 /* FSManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		257E52D1276F7DF900084D0F /* DSCKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DSCKit.docc; sourceTree = "<group>"; };
 		257E52D7276F7DF900084D0F /* DSCKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSCKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		257E52DC276F7DF900084D0F /* DSCKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSCKitTests.swift; sourceTree = "<group>"; };
+		257E52E8276F84B000084D0F /* DFCFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFCFS.swift; sourceTree = "<group>"; };
+		25FDFB392775BA2B0083F4E7 /* FSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 		257E52CF276F7DF900084D0F /* DSCKit */ = {
 			isa = PBXGroup;
 			children = (
+				257E52E7276F84A400084D0F /* DSCFS */,
 				257E52D0276F7DF900084D0F /* DSCKit.h */,
 				257E52D1276F7DF900084D0F /* DSCKit.docc */,
 			);
@@ -83,6 +88,15 @@
 				257E52DC276F7DF900084D0F /* DSCKitTests.swift */,
 			);
 			path = DSCKitTests;
+			sourceTree = "<group>";
+		};
+		257E52E7276F84A400084D0F /* DSCFS */ = {
+			isa = PBXGroup;
+			children = (
+				257E52E8276F84B000084D0F /* DFCFS.swift */,
+				25FDFB392775BA2B0083F4E7 /* FSManager.swift */,
+			);
+			path = DSCFS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +208,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				257E52E9276F84B000084D0F /* DFCFS.swift in Sources */,
 				257E52D2276F7DF900084D0F /* DSCKit.docc in Sources */,
+				25FDFB3A2775BA2B0083F4E7 /* FSManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +414,7 @@
 		257E52E5276F7DF900084D0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8T4P9D4TB2;
@@ -414,6 +431,7 @@
 		257E52E6276F7DF900084D0F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8T4P9D4TB2;
