@@ -10,10 +10,6 @@ let package = Package(
         .library(
             name: "DSCKit",
             targets: ["DSCKit"]),
-        .library(
-            name: "DSCLib",
-            targets: ["DSCLib"]),
-
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -27,7 +23,8 @@ let package = Package(
             dependencies: []),
         .target(
             name: "DSCLib",
-            dependencies: []),
+            publicHeadersPath: "include"
+        ),
         .testTarget(
             name: "DSCKitTests",
             dependencies: ["DSCKit"]),

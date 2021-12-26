@@ -8,6 +8,10 @@
 #ifndef DSCLib_hpp
 #define DSCLib_hpp
 
-#include <stdio.h>
+#ifdef __cpulspuls
+extern "C"
+#endif
 
+#include <stdio.h>
+#include "filesys/DSCFS.hpp"
 #endif /* DSCLib_hpp */
