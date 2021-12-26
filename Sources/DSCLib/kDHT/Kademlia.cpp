@@ -24,8 +24,3 @@ void Kademlia::findNode() {
 void Kademlia::findValue() {
     std::cout << "KD::FIND_VALUR" << std::endl;
 };
-
-std::future<int> Kademlia::tryPing() {
-    std::cout << "KD::TRY_PING" << std::endl;
-    return 1;
-}

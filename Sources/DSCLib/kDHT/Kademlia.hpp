@@ -17,9 +17,6 @@ public:
     void store();
     void findNode();
     void findValue();
-
-private:
-    std::future<int> tryPing();
 };
 
 #endif /* Kademlia_hpp */
