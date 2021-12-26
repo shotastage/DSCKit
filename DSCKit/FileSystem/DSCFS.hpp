@@ -27,11 +27,17 @@ typedef struct DSFile {
 
 class DSFileManager {
 public:
+    // Properties
+    DSFile targetFile;
+
+    // Initializer
+    DSFileManager(DSFile target);
+
+    // Public methods
     void write();
     void read();
     void find();
     void clear();
-
 
 private:
     void joinBricks();

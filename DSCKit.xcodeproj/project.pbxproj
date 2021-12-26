@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		256BE998277849A4006123E6 /* DSCFS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 256BE996277849A4006123E6 /* DSCFS.cpp */; };
 		256BE999277849A4006123E6 /* DSCFS.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 256BE997277849A4006123E6 /* DSCFS.hpp */; };
+		25767DD227787D4D00E247E7 /* Network.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25767DD027787D4D00E247E7 /* Network.cpp */; };
+		25767DD327787D4D00E247E7 /* Network.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 25767DD127787D4D00E247E7 /* Network.hpp */; };
 		257E52D2276F7DF900084D0F /* DSCKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 257E52D1276F7DF900084D0F /* DSCKit.docc */; };
 		257E52D8276F7DF900084D0F /* DSCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257E52CD276F7DF900084D0F /* DSCKit.framework */; };
 		257E52DD276F7DF900084D0F /* DSCKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257E52DC276F7DF900084D0F /* DSCKitTests.swift */; };
@@ -30,6 +32,8 @@
 /* Begin PBXFileReference section */
 		256BE996277849A4006123E6 /* DSCFS.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DSCFS.cpp; sourceTree = "<group>"; };
 		256BE997277849A4006123E6 /* DSCFS.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DSCFS.hpp; sourceTree = "<group>"; };
+		25767DD027787D4D00E247E7 /* Network.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Network.cpp; sourceTree = "<group>"; };
+		25767DD127787D4D00E247E7 /* Network.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Network.hpp; sourceTree = "<group>"; };
 		257E52CD276F7DF900084D0F /* DSCKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DSCKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		257E52D0276F7DF900084D0F /* DSCKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSCKit.h; sourceTree = "<group>"; };
 		257E52D1276F7DF900084D0F /* DSCKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DSCKit.docc; sourceTree = "<group>"; };
@@ -67,6 +71,15 @@
 			path = FileSystem;
 			sourceTree = "<group>";
 		};
+		25767DCF27787D3300E247E7 /* kDHT */ = {
+			isa = PBXGroup;
+			children = (
+				25767DD027787D4D00E247E7 /* Network.cpp */,
+				25767DD127787D4D00E247E7 /* Network.hpp */,
+			);
+			path = kDHT;
+			sourceTree = "<group>";
+		};
 		257E52C3276F7DF900084D0F = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +101,7 @@
 		257E52CF276F7DF900084D0F /* DSCKit */ = {
 			isa = PBXGroup;
 			children = (
+				25767DCF27787D3300E247E7 /* kDHT */,
 				256BE99527784979006123E6 /* FileSystem */,
 				257E52E7276F84A400084D0F /* DSCFS */,
 				257E52D0276F7DF900084D0F /* DSCKit.h */,
@@ -121,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				256BE999277849A4006123E6 /* DSCFS.hpp in Headers */,
+				25767DD327787D4D00E247E7 /* Network.hpp in Headers */,
 				257E52DE276F7DF900084D0F /* DSCKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +242,7 @@
 				257E52E9276F84B000084D0F /* DFCFS.swift in Sources */,
 				256BE998277849A4006123E6 /* DSCFS.cpp in Sources */,
 				257E52D2276F7DF900084D0F /* DSCKit.docc in Sources */,
+				25767DD227787D4D00E247E7 /* Network.cpp in Sources */,
 				25FDFB3A2775BA2B0083F4E7 /* FSManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
