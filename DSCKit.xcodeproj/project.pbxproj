@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		255F06F42778BC2800C98C65 /* Kademlia.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 255F06F22778BC2800C98C65 /* Kademlia.cpp */; };
+		255F06F52778BC2800C98C65 /* Kademlia.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 255F06F32778BC2800C98C65 /* Kademlia.hpp */; };
 		256BE998277849A4006123E6 /* DSCFS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 256BE996277849A4006123E6 /* DSCFS.cpp */; };
 		256BE999277849A4006123E6 /* DSCFS.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 256BE997277849A4006123E6 /* DSCFS.hpp */; };
 		25767DD227787D4D00E247E7 /* Network.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25767DD027787D4D00E247E7 /* Network.cpp */; };
@@ -30,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		255F06F22778BC2800C98C65 /* Kademlia.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Kademlia.cpp; sourceTree = "<group>"; };
+		255F06F32778BC2800C98C65 /* Kademlia.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Kademlia.hpp; sourceTree = "<group>"; };
 		256BE996277849A4006123E6 /* DSCFS.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DSCFS.cpp; sourceTree = "<group>"; };
 		256BE997277849A4006123E6 /* DSCFS.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DSCFS.hpp; sourceTree = "<group>"; };
 		25767DD027787D4D00E247E7 /* Network.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Network.cpp; sourceTree = "<group>"; };
@@ -76,6 +80,8 @@
 			children = (
 				25767DD027787D4D00E247E7 /* Network.cpp */,
 				25767DD127787D4D00E247E7 /* Network.hpp */,
+				255F06F22778BC2800C98C65 /* Kademlia.cpp */,
+				255F06F32778BC2800C98C65 /* Kademlia.hpp */,
 			);
 			path = kDHT;
 			sourceTree = "<group>";
@@ -136,6 +142,7 @@
 			files = (
 				256BE999277849A4006123E6 /* DSCFS.hpp in Headers */,
 				25767DD327787D4D00E247E7 /* Network.hpp in Headers */,
+				255F06F52778BC2800C98C65 /* Kademlia.hpp in Headers */,
 				257E52DE276F7DF900084D0F /* DSCKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +249,7 @@
 				257E52E9276F84B000084D0F /* DFCFS.swift in Sources */,
 				256BE998277849A4006123E6 /* DSCFS.cpp in Sources */,
 				257E52D2276F7DF900084D0F /* DSCKit.docc in Sources */,
+				255F06F42778BC2800C98C65 /* Kademlia.cpp in Sources */,
 				25767DD227787D4D00E247E7 /* Network.cpp in Sources */,
 				25FDFB3A2775BA2B0083F4E7 /* FSManager.swift in Sources */,
 			);

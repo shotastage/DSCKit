@@ -31,8 +31,6 @@ void DSFileManager::clear() {
 
 void DSFileManager::joinBricks() {
     std::cout << "Join brick section" << std::endl;
-    
-    
 };
 
 void DSFileManager::recover() {
