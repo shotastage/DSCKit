@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		256BE998277849A4006123E6 /* DSCFS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 256BE996277849A4006123E6 /* DSCFS.cpp */; };
+		256BE999277849A4006123E6 /* DSCFS.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 256BE997277849A4006123E6 /* DSCFS.hpp */; };
 		257E52D2276F7DF900084D0F /* DSCKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 257E52D1276F7DF900084D0F /* DSCKit.docc */; };
 		257E52D8276F7DF900084D0F /* DSCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257E52CD276F7DF900084D0F /* DSCKit.framework */; };
 		257E52DD276F7DF900084D0F /* DSCKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257E52DC276F7DF900084D0F /* DSCKitTests.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		256BE996277849A4006123E6 /* DSCFS.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DSCFS.cpp; sourceTree = "<group>"; };
+		256BE997277849A4006123E6 /* DSCFS.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DSCFS.hpp; sourceTree = "<group>"; };
 		257E52CD276F7DF900084D0F /* DSCKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DSCKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		257E52D0276F7DF900084D0F /* DSCKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSCKit.h; sourceTree = "<group>"; };
 		257E52D1276F7DF900084D0F /* DSCKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DSCKit.docc; sourceTree = "<group>"; };
@@ -54,6 +58,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		256BE99527784979006123E6 /* FileSystem */ = {
+			isa = PBXGroup;
+			children = (
+				256BE996277849A4006123E6 /* DSCFS.cpp */,
+				256BE997277849A4006123E6 /* DSCFS.hpp */,
+			);
+			path = FileSystem;
+			sourceTree = "<group>";
+		};
 		257E52C3276F7DF900084D0F = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +88,7 @@
 		257E52CF276F7DF900084D0F /* DSCKit */ = {
 			isa = PBXGroup;
 			children = (
+				256BE99527784979006123E6 /* FileSystem */,
 				257E52E7276F84A400084D0F /* DSCFS */,
 				257E52D0276F7DF900084D0F /* DSCKit.h */,
 				257E52D1276F7DF900084D0F /* DSCKit.docc */,
@@ -106,6 +120,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				256BE999277849A4006123E6 /* DSCFS.hpp in Headers */,
 				257E52DE276F7DF900084D0F /* DSCKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,6 +176,7 @@
 				TargetAttributes = {
 					257E52CC276F7DF900084D0F = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 					257E52D6276F7DF900084D0F = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -209,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				257E52E9276F84B000084D0F /* DFCFS.swift in Sources */,
+				256BE998277849A4006123E6 /* DSCFS.cpp in Sources */,
 				257E52D2276F7DF900084D0F /* DSCKit.docc in Sources */,
 				25FDFB3A2775BA2B0083F4E7 /* FSManager.swift in Sources */,
 			);
@@ -358,6 +375,7 @@
 		257E52E2276F7DF900084D0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -378,6 +396,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -386,6 +405,7 @@
 		257E52E3276F7DF900084D0F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
