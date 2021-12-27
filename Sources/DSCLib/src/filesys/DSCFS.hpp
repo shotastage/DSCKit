@@ -12,6 +12,9 @@
 #include <string>
 #include <vector>
 
+using std::string;
+using std::vector;
+
 typedef struct DSBrick {
     std::string identifier;
     std::string previous;
@@ -20,9 +23,9 @@ typedef struct DSBrick {
 } DSBrick;
 
 typedef struct DSFile {
-    std::string name;
+    string name;
     int64_t blockSize;
-    std::vector<DSBrick> bricks;
+    vector<DSBrick> bricks;
 } DSFile;
 
 class DSFileManager {

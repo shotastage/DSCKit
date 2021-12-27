@@ -12,7 +12,9 @@
 #include <stdio.h>
 #include <string>
 
+using std::string;
+
 typedef struct KDHTNetwork {
-    std::string identifier;
+    string identifier;
 } KDHTNetwork;
 #endif /* Network_hpp */

@@ -9,18 +9,21 @@
 #include <future>
 #include "Kademlia.hpp"
 
+using std::cout;
+using std::endl;
+
 void Kademlia::ping() {
-    std::cout << "KD::PING" << std::endl;
+    cout << "KD::PING" << endl;
 };
 
 void Kademlia::store() {
-    std::cout << "KD::STORE" << std::endl;
+    cout << "KD::STORE" << endl;
 };
 
 void Kademlia::findNode() {
-    std::cout << "KD::FIND_NODE" << std::endl;
+    cout << "KD::FIND_NODE" << endl;
 };
 
 void Kademlia::findValue() {
-    std::cout << "KD::FIND_VALUR" << std::endl;
+    cout << "KD::FIND_VALUR" << endl;
 };

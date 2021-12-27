@@ -8,31 +8,34 @@
 #include "DSCFS.hpp"
 #include <iostream>
 
+using std::cout;
+using std::endl;
+
 // Constructor
 DSFileManager::DSFileManager(DSFile target) {
     targetFile = target;
 };
 
 void DSFileManager::write() {
-    std::cout << "Write file section" << std::endl;
+    cout << "Write file section" << endl;
 };
 
 void DSFileManager::read() {
-    std::cout << "Read file section" << std::endl;
+    cout << "Read file section" << endl;
 };
 
 void DSFileManager::find() {
-    std::cout << "Find file section" << std::endl;
+    cout << "Find file section" << endl;
 };
 
 void DSFileManager::clear() {
-    std::cout << "Clear file section" << std::endl;
+    cout << "Clear file section" << endl;
 };
 
 void DSFileManager::joinBricks() {
-    std::cout << "Join brick section" << std::endl;
+    cout << "Join brick section" << endl;
 };
 
 void DSFileManager::recover() {
-    std::cout << "Recover brick section" << std::endl;
+    cout << "Recover brick section" << endl;
 };
