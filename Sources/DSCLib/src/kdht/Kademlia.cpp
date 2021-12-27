@@ -12,18 +12,27 @@
 using std::cout;
 using std::endl;
 
-void Kademlia::ping() {
-    cout << "KD::PING" << endl;
-};
+namespace DSC::Kademlia
+{
 
-void Kademlia::store() {
-    cout << "KD::STORE" << endl;
-};
+    void Kademlia::ping()
+    {
+        cout << "KD::PING" << endl;
+    };
 
-void Kademlia::findNode() {
-    cout << "KD::FIND_NODE" << endl;
-};
+    void Kademlia::store()
+    {
+        cout << "KD::STORE" << endl;
+    };
 
-void Kademlia::findValue() {
-    cout << "KD::FIND_VALUR" << endl;
-};
+    void Kademlia::findNode()
+    {
+        cout << "KD::FIND_NODE" << endl;
+    };
+
+    void Kademlia::findValue()
+    {
+        cout << "KD::FIND_VALUR" << endl;
+    };
+
+}

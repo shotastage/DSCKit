@@ -8,8 +8,6 @@
 #ifndef Network_hpp
 #define Network_hpp
 
-
-#include <stdio.h>
 #include <string>
 
 using std::string;
